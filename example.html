@@ -36,10 +36,18 @@
     		margin-bottom: 0px;
 		}
 
-        .form-floating input {
-            width: 100%; /* 가로 길이 100%로 설정 */
-    		padding: 10px; /* 원하는 가로 패딩 크기로 조절 */
+        /* 첫 번째 입력 필드 스타일 수정 */
+        .form-control#floatingInput {
+            font-size: 15px;
+            width: 300px;
+            height: 28px;
+        }
 
+        /* 두 번째 입력 필드 스타일 수정 */
+        .form-control#floatingPassword {
+            font-size: 15px;
+            width: 300px;
+            height: 28px;
         }
 
         .form-floating label {
@@ -58,21 +66,25 @@
        
 
         .checkbox {
+        	width: 300px;
+            height: 32px;
             margin-top: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         .btn-primary {
-            background-color: #32a4e7;
+            background-color: #0370de;
             border: none;
             border-radius: 4px;
-            padding: 10px;
-            width: 100%;
+            width: 300px;
+            height: 48px;
             color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .btn-primary:hover {
-            background-color: #1e90ff;
+            background-color: #004d99;
         }
 
         .text-muted {
