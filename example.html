@@ -8,7 +8,6 @@
     <style>
         body {
             background-color: #f8f9fa;
-            font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,32 +22,43 @@
         }
 
         .form-signin img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 20px;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 10px;
         }
 
         .form-signin h1 {
-            font-size: 24px;
+            font-size: 30px;
             margin-bottom: 20px;
         }
 
         .form-floating {
-            margin-bottom: 15px;
+    		margin-bottom: 0px;
+		}
+
+        .form-floating input {
+            width: 100%; /* 가로 길이 100%로 설정 */
+    		padding: 10px; /* 원하는 가로 패딩 크기로 조절 */
+
         }
 
         .form-floating label {
             color: #333;
         }
-
+		.form-control:focus {
+            border-color: #1b87f3;
+            box-shadow: 0 0 0 0.25rem rgba(120, 160, 215, 0.5);
+        }
         .form-control {
             border: 1px solid #ccc;
             border-radius: 4px;
             padding: 10px;
             width: 100%;
         }
+       
 
         .checkbox {
+            margin-top: 15px;
             margin-bottom: 15px;
         }
 
