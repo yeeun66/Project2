@@ -5,63 +5,66 @@
 <h1>Yeeun's HTML Forms</h1>
 
 <form action="/action_page.php">
-    <!-- text -->
-    <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname">
-  <br><br>
-  <!--radio  -->
-  <input type="radio" id="html" name="fav_language" value="HTML">
-  <label for="html">HTML</label><br>
-  <input type="radio" id="css" name="fav_language" value="CSS">
-  <label for="css">CSS</label><br>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript">JavaScript</label>
-  <br><br>
-  <!-- checkbox -->
-  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-<label for="vehicle1"> I have a bike</label><br>
-<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-<label for="vehicle2"> I have a car</label><br>
-<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-<label for="vehicle3"> I have a boat</label>
-<br><br>
-<!-- select -->
-<label for="cars">Choose a car:</label>
-<select id="cars" name="cars">
-  <option value="volvo">Volvo</option>
-  <option value="saab">Saab</option>
-  <option value="fiat">Fiat</option>
-  <option value="audi">Audi</option>
-</select>
-<br><br>
 
-<!-- date -->
-  <label for="birthday">Birthday:</label>
-  <input type="date" id="birthday" name="birthday">
-  <br><br>
+	<!-- fieldset -->
+	<fieldset>
+    <legend>개인정보 입력 :</legend>
+    <!-- text -->
+    <label for="fname">학번 :</label><br>
+    <input type="text" id="fname" name="fname" value="2**00***"><br>
+    <label for="lname">이름 :</label><br>
+    <input type="text"id="lname" name="lname" value="오예은"><br><br>
+    
+        <!-- date -->
+      <label for="birthday">생일 :</label>
+      <input type="date" id="birthday" name="birthday">
+      <br><br>
+  
+    	<!-- select -->
+        <label for="cars">학년 :</label>
+    <select id="grade" name="grade">
+      <option value="fres">1학년</option>
+      <option value="soph">2학년</option>
+      <option value="juni">3학년</option>
+      <option value="seni">4학년</option>
+    </select>
+    
+    	<!--radio  -->
+      	<p>전공</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">이공계열</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">인문계열</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">예체능</label>
+    <br><br>
+
+        <!-- color -->
+    <label for="favcolor">Select your favorite color:</label>
+      <input type="color" id="favcolor" name="favcolor">
+    <br><br>
+    
+    	<!-- checkbox -->
+        관심사
+        <input type="checkbox" id="vehicle1" name="vehicle1"value="Bike">
+      <label for="vehicle1"> 스포츠  </label>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+      <label for="vehicle2"> IT</label>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+      <label for="vehicle3"> 연예</label>
+      <br><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+    
+    </fieldset>
+	<br>
 
 <!-- textarea -->
 <textarea name="message" rows="10" cols="30">
-  The cat was playing in the garden.
-  </textarea>
-<br><br>
-
-<!-- fieldset -->
-<fieldset>
-    <legend>개인정보 입력 :</legend>
-    <label for="fname">이름 :</label><br>
-    <input type="text" id="fname" name="fname" value="예은"><br>
-    <label for="lname">성 :</label><br>
-    <input type="text"id="lname" name="lname" value="오"><br><br>
-    <input type="submit" value="Submit">
-    </fieldset>
-<br><br>
-
-<!-- color -->
-<label for="favcolor">Select your favorite color:</label>
-  <input type="color" id="favcolor" name="favcolor">
+특이사항 입력. 
+</textarea>
 <br><br>
 
 </form> 
