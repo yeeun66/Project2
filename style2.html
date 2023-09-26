@@ -72,7 +72,17 @@ body {
     cursor: pointer;
 }
 
+.menuitem:nth-child(1) {
+   background-color:white;
+   color: #d14836;
+   font-weight:bold;
+}
 .menuitem:nth-child(2) {
+   background-color:white;
+   color: #d14836;
+   font-weight:bold;
+}
+.menuitem:nth-child(5) {
    background-color:white;
    color: #d14836;
    font-weight:bold;
@@ -91,7 +101,6 @@ a:hover {
     text-decoration: underline;
 }
 
-
 </style>
 
 </head>
@@ -109,7 +118,7 @@ a:hover {
        <li class="menuitem"><a href="style2.html">Stylesheet 2</a></li>
        <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
        <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-       <li class="menuitem" onclick="noStyles()">No Stylesheet
+        <li class="menuitem"><a href="nostyle.html">No Stylesheet</a></li>
      </ul>
     </div>
     <div id="main">
@@ -121,8 +130,8 @@ a:hover {
       <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
       </p>
        <h2>No Styles</h2>
-      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
-   </div>
+       <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="nostyle.html">No Stylesheet</a>.</p>
+    </div>
     <div id="sidebar">
       <h3>Side-Bar</h3>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -136,19 +145,6 @@ a:hover {
 </div>
 
 <script>
-function noStyles() {
-    document.styleSheets[0].disabled = true;
-    document.styleSheets[1].disabled = true;
-    document.styleSheets[2].disabled = true;
-    document.styleSheets[3].disabled = true;
-}
-
-function reStyle(n) {
-    noStyles()
-    document.styleSheets[n].disabled = false;
-}
-
-
 </script>
 </body>
 </html>

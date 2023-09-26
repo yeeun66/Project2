@@ -128,8 +128,8 @@ a:hover {
        <li class="menuitem"><a href="style2.html">Stylesheet 2</a></li>
        <li class="menuitem" onclick="reStyle(2)">Stylesheet 3
        <li class="menuitem" onclick="reStyle(3)">Stylesheet 4
-       <li class="menuitem" onclick="noStyles()">No Stylesheet
-     </ul>
+       <li class="menuitem"><a href="nostyle.html">No Stylesheet</a></li>
+    </ul>
     </div>
     <div id="main">
       <h1>Same Page Different Stylesheets</h1>
@@ -140,7 +140,7 @@ a:hover {
       <a href="#" onclick="reStyle(3);return false">Stylesheet4</a>.
       </p>
        <h2>No Styles</h2>
-      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.</p>
+      <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:<br><a href="nostyle.html">No Stylesheet</a>.</p>
    </div>
     <div id="sidebar">
       <h3>Side-Bar</h3>
@@ -155,12 +155,12 @@ a:hover {
 </div>
 
 <script>
-function noStyles() {
-    document.styleSheets[0].disabled = true;
-    document.styleSheets[1].disabled = true;
-    document.styleSheets[2].disabled = true;
-    document.styleSheets[3].disabled = true;
-}
+// function noStyles() {
+//     document.styleSheets[0].disabled = true;
+//     document.styleSheets[1].disabled = true;
+//     document.styleSheets[2].disabled = true;
+//     document.styleSheets[3].disabled = true;
+// }
 
 // function reStyle(n) {
 //     noStyles()
